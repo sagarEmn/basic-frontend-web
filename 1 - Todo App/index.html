@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,24 @@
     <title>Todo App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <h1>Todo App</h1>
+    <div class="wrapper">
+      <form>
+        <input
+          id="todo-input"
+          type="text"
+          placeholder="Write a todo item"
+          autocomplete="off"
+        />
+        <button id="add-button">ADD</button>
+      </form>
+      <ul id="todo-list">
+        <li class="todo">
+          <input type="checkbox" id="todo-1" />
+          <label class="custom-checkbox" for="todo-1"></label>
+        </li>
+      </ul>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
