@@ -232,7 +232,7 @@ input[type="checkbox"] {
     font-size: min(3rem, 15vw);
   }
   form {
-    font-size: 8vw;
+    font-size: 7vw;
   }
   .todo__item{
     font-size: 2rem;
