@@ -1,3 +1,38 @@
+/* css reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* css reset */
+
 /* html, body height */
 html {
   height: 100vh;
@@ -28,9 +63,10 @@ html {
 }
 
 body {
-  padding: 10px;
+  /* padding: 10px; */
   background-color: var(--bg-clr);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
