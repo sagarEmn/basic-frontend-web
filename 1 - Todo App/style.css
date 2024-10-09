@@ -89,7 +89,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  width: 100%;
+  width: min(100%, 800px);
 }
 
 .todo-app__header {
@@ -98,6 +98,10 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: var(--accent-clr);
+}
+
+.todo-app__form-section {
+  width: min(100%, 640px);
 }
 
 #todo-input {
