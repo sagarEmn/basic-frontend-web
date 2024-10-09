@@ -81,7 +81,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .todo-app {
@@ -90,6 +90,7 @@ body {
   align-items: center;
   gap: 20px;
   width: min(100%, 800px);
+  height: 100%;
 }
 
 .todo-app__header {
@@ -102,6 +103,9 @@ body {
 
 .todo-app__form-section {
   width: min(100%, 640px);
+}
+.todo-app__header-form-container {
+  margin-block: 3rem;
 }
 
 #todo-input {
@@ -217,7 +221,7 @@ input[type="checkbox"] {
     position: unset;
     width: 100%;
     padding: .5rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .todo-app__header {
     font-size: min(3rem, 15vw);

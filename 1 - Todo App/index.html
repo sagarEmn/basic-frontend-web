@@ -11,53 +11,23 @@
   </head>
   <body>
     <main class="todo-app">
-      <h1 class="todo-app__header">Todo App</h1>
-      <section class="todo-app__form-section">
-        <form>
-          <input
-            id="todo-input"
-            type="text"
-            placeholder="Write a todo item"
-            autocomplete="off"
-          />
-          <button id="add-button">ADD</button>
-        </form>
-      </section>
+      <div class="todo-app__header-form-container">
+        <h1 class="todo-app__header">Todo App</h1>
+        <section class="todo-app__form-section">
+          <form>
+            <input
+              id="todo-input"
+              type="text"
+              placeholder="Write a todo item"
+              autocomplete="off"
+            />
+            <button id="add-button">ADD</button>
+          </form>
+        </section>
+      </div>
 
       <section class="todo-app__list-section">
-        <ul id="todo-app__list">
-          <!-- <li class="todo__item">
-            <input type="checkbox" id="todo-1" />
-            <label class="todo__item__checkbox" for="todo-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#e8eaed"
-              >
-                <path
-                  d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"
-                />
-              </svg>
-            </label>
-            <label for="todo-1" class="todo__item__text"> Bury Ben </label>
-            <label for="todo-1" class="todo__item__delete">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#e8eaed"
-              >
-                <path
-                  d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"
-                />
-              </svg>
-            </label>
-          </li> -->
-      
-        </ul>
+        <ul id="todo-app__list"></ul>
       </section>
     </main>
     <script type="module" src="/main.js" defer></script>
