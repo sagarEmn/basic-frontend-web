@@ -93,7 +93,6 @@ body {
 }
 
 .todo-app__header {
-  margin-block: 20px;
   font-size: 3rem;
   font-weight: 800;
   text-align: center;
@@ -203,4 +202,23 @@ input[type="checkbox"]:checked ~ .todo__item__text {
 
 input[type="checkbox"] {
   display: none;
+}
+
+@media(max-width: 500px) {
+  html {
+    font-size: 12px;
+  }
+  #add-button {
+    margin-top: 1rem;
+    position: unset;
+    width: 100%;
+    padding: .5rem;
+    font-size: 2rem;
+  }
+  .todo-app__header {
+    font-size: 15vw;
+  }
+  form {
+    font-size: 8vw;
+  }
 }
