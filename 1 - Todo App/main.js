@@ -102,3 +102,13 @@ function loadTodos() {
 }
 
 document.addEventListener("DOMContentLoaded", loadTodos);
+
+// main.js
+const textarea = document.getElementById('todo-input');
+
+// Function to auto-expand the textarea height
+textarea.addEventListener('input', function () {
+  this.style.height = 'auto'; // Reset height to auto
+  this.style.height = `${this.scrollHeight}px`; // Set height to scroll height
+});
+  

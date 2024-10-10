@@ -124,6 +124,7 @@ form {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  width: 100%;
 }
 
 #todo-input:focus {
@@ -141,6 +142,9 @@ form {
   color: inherit;
   caret-color: var(--accent-clr);
   flex: 1;
+  resize: none; /* Prevent manual resizing */
+  min-height: 4rem; /* Initial height */
+  overflow-y: auto; /* Allow vertical scrolling */
 }
 
 #add-button {
@@ -154,6 +158,10 @@ form {
   font-weight: 600;
   color: var(--primary-clr-900);
   cursor: pointer;
+  max-height: 5rem;
+  display: flex;
+  place-items: center;
+  place-content: center;
 }
 
 .todo-app__list-section {
@@ -228,7 +236,6 @@ input[type="checkbox"] {
     font-size: min(12px, 15vw);
   }
   .todo-app__form-section {
-    display: flex;
     flex-direction: column;
   }
   .todo-app__header {
