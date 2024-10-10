@@ -116,6 +116,7 @@ body {
 #todo-input {
   box-sizing: border-box;
   padding: 1rem;
+  font-size: 2rem;
   width: 100%;
   background: none;
   border: 1px solid var(--secondary-clr-700);
@@ -139,6 +140,7 @@ body {
   right: 0;
 
   /* styling */
+  font-size: 2rem;
   background-color: var(--accent-clr);
   height: 100%;
   border: none;
