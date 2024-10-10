@@ -111,6 +111,23 @@ body {
 
 .todo-app__form-section {
   width: min(100%, 640px);
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+#todo-input:focus {
+  outline: none;
 }
 
 #todo-input {
@@ -123,28 +140,15 @@ body {
   border-radius: var(--border-r-md);
   color: inherit;
   caret-color: var(--accent-clr);
-}
-
-.todo-app__form-section {
-  position: relative;
-}
-
-#todo-input:focus {
-  outline: none;
+  flex: 1;
 }
 
 #add-button {
-  /* position */
-  position: absolute;
-  top: 0;
-  right: 0;
-
   /* styling */
   font-size: 2rem;
   background-color: var(--accent-clr);
-  height: 100%;
   border: none;
-  padding: 0 20px;
+  padding: 1.25rem;
   border: none;
   border-radius: var(--border-r-md);
   font-weight: 600;
@@ -219,24 +223,22 @@ input[type="checkbox"] {
   display: none;
 }
 
-@media(max-width: 500px) {
+@media (max-width: 500px) {
   html {
     font-size: min(12px, 15vw);
   }
-  #add-button {
-    margin-top: 1rem;
-    position: unset;
-    width: 100%;
-    padding: .5rem;
-    font-size: 2.5rem;
+  .todo-app__form-section {
+    display: flex;
+    flex-direction: column;
   }
   .todo-app__header {
     font-size: min(3rem, 15vw);
   }
   form {
     font-size: 7vw;
+    flex-direction: column;
   }
-  .todo__item{
+  .todo__item {
     font-size: 2rem;
   }
 }
