@@ -1,11 +1,30 @@
 @import "/reset.css";
 
 :root {
-    --accent-clr: #EB5E28;
-    
-    --primary-clr-900: #252422;
-    --primary-clr-700: #403D39;
-    
-    --secondary-clr-100: #FFFCF2;
-    --secondary-clr-500: #CCC5B9;
+  --accent-clr: #eb5e28;
+
+  --primary-clr-900: #252422;
+  --primary-clr-700: #403d39;
+
+  --secondary-clr-100: #fffcf2;
+  --secondary-clr-500: #ccc5b9;
+}
+
+main {
+  height: 100%;
+}
+
+.form-container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
 }

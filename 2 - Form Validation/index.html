@@ -2,21 +2,65 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <link rel="icon" type="image/svg+xml" href="/icons/form.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Validation</title>
 
     <!-- css link -->
-     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <main>
-      <section>
-        <h2>Fill out the form</h2>
+      <section class="form-container">
+        <h2>Sign Up Form</h2>
         <form id="form">
-          <input type="text" id="name" placeholder="Enter your name..." />
-          <input type="email" id="email" placeholder="Enter your email..." />
-          <button type="submit">Submit</button>
+          <div class="text-container">
+            <label for="name">
+              <svg width="24" height="24">
+                <use xlink:href="/icons/sprite.svg#icon-person"></use>
+              </svg>
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name..."
+            />
+          </div>
+
+          <div class="email-container">
+            <label for="email">
+              <svg width="24" height="24">
+                <use xlink:href="/icons/sprite.svg#icon-email"></use>
+              </svg>
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email..."
+            />
+          </div>
+
+          <div class="password-container">
+            <label for="password"> Password: </label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+          </div>
+          <div class="repeat-password-container">
+            <label for="repeat-password">Rewrite the password:</label>
+            <input
+              type="password"
+              name="repeat-password"
+              id="repeat-password"
+              placeholder="Repeat password"
+            />
+          </div>
+          <button type="submit">Sign Up</button>
         </form>
       </section>
     </main>
