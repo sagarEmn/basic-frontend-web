@@ -1,0 +1,35 @@
+/* css reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* css reset */
+
+/* set height to html, body */
+
+html {
+    height: 100vh;
+}
+
+body {
+    min-height: 100vh;
+    height: 100vh;
+}
