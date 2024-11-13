@@ -45,3 +45,13 @@
   #root, #__next {
     isolation: isolate;
   }
+
+  /* setting height */
+  html {
+    height: 100vh;
+  }
+
+  body {
+    height: 100%;
+  }
+  /* setting height */
