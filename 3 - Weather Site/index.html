@@ -5,9 +5,23 @@
     <link rel="icon" type="image/svg+xml" href="/weather.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Site</title>
+
+    <!-- css link -->
+     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+
+    <main>
+      <section class="search-box">
+        <input type="text" name="city" id="city-input" placeholder="Enter city name" spellcheck="false">
+        <button id="search"><img src="images/search.png" alt=""></button>
+      </section>
+    </main>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
